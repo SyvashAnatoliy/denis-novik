@@ -1,0 +1,116 @@
+.root{
+  --font-family: 'Open Sans';
+  --text-color: #828282;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: 500;
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  ul{
+    list-style-type: none;
+  }
+
+  h2, h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.container{
+  max-width: 1110px;
+  margin: 0 auto;
+  width: 94%;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  #menu {   
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    color: #828282;
+    #home{
+      color: black;
+      font-weight: 700;
+    }
+  }
+  #name {
+    display: flex;
+
+  }
+}
+
+#about-me{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 30px;
+  height: 500px;
+  background-color: lightgray;
+  max-width: 100%;
+  width: 100%;
+}
+
+.skills{
+  padding: 100px 0;
+  gap: 50px;
+
+  ul{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 50px;
+  }
+}
+
+.portfolio{
+  padding: 100px 0;
+  gap: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  background: lightgray;
+  width: 100%;
+}
+
+footer{
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  width: 100%;
+
+  button {
+    margin-top: 50px;
+    cursor: pointer;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    color: white;
+    border: none;
+    padding: 11px 24px;
+    background-color: black;
+    border-radius: 20px;
+  }
+
+  h4{
+    color: #828282;
+  }
+}
