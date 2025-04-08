@@ -40,6 +40,15 @@ header {
     height: 80px;
     align-content: center;
 
+    li {
+      font-weight: 500;
+      transition: all .1s ease-in;
+    }
+
+    li:hover {
+      font-weight: 700;
+    }
+
     .menu {
       display: flex;
       flex-direction: row;
@@ -51,6 +60,11 @@ header {
 
       .home {
         color: black;
+        font-weight: 500;
+        transition: all .1s ease-in;
+      }
+
+      .home:hover{
         font-weight: 700;
       }
     }
@@ -120,6 +134,12 @@ footer {
   text-align: center;
   width: 100%;
 
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
   button {
     margin-top: 50px;
     cursor: pointer;
@@ -131,7 +151,34 @@ footer {
     border: none;
     padding: 11px 24px;
     background-color: black;
+    border: 1px solid black;
     border-radius: 20px;
+    align-self: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: white;
+    color: black;
+  }
+
+  ul{
+    margin-right: 54px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+
+    li {
+      opacity: 1;
+      transition: opacity 0.1s ease;
+    }
+    
+    li:hover {
+      opacity: 0.5;
+    }
   }
 
   h4 {
